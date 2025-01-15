@@ -1,0 +1,100 @@
+/* CSS */
+
+/* Fonts */
+@import url("fonts/font.css");
+
+/* Desktop and Laptop */
+body {
+    background-color: #012d36;
+    width: 720px;
+    margin: 0 auto;
+}
+
+header h1 {
+    color: #eae9d4;
+    font-family: "Sofia", cursive;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    text-indent: 3px;
+}
+
+header h1 span.tag {
+    display: block;
+    color: #eae9d4;
+    font-size: 65%;
+    font-weight: normal;
+    letter-spacing: -1px;
+    line-height: 0.4em;
+    text-indent: 26px;
+    text-shadow: none;
+    text-transform: lowercase;
+}
+
+header h4 span.tag {
+    text-indent: 0px;
+}
+
+/* Mobiles between 480px and 720px */
+@media only screen and (min-width: 480px) and (max-width: 720px) {
+    body {
+        width: 480px;
+        margin: 0 auto;
+    }
+
+    header h1 {
+        letter-spacing: 1.2px;
+        font-size: 1.6em;
+    }
+
+    header h4 span.tag {
+        text-indent: 0px;
+    }
+}
+
+/* Mobiles below 480px */
+@media only screen and (max-width: 480px) {
+    body {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    header h1 {
+        letter-spacing: 1px;
+        font-size: 1.4em;
+    }
+
+    header h4 span.tag {
+        text-indent: 0px;
+    }
+}
+
+.button-33 {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    letter-spacing: 2px;
+    box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+        rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+        rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+        rgba(44, 187, 99, 0.15) 0 16px 32px;
+    color: #012d36;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Sofia", cursive;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 85%;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-33:hover {
+    box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+        rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+        rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+        rgba(44, 187, 99, 0.25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
