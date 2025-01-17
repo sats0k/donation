@@ -1,1 +1,1 @@
-Small and fast webpage. 
+Simple small and fast webpage. 
